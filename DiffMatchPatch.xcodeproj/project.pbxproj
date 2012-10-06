@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7200BFD1620A0E900591570 /* DiffMatchPatch-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C7200BFC1620A0E900591570 /* DiffMatchPatch-Prefix.pch */; };
 		C725BDE8160B15670098CA23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C725BDE6160B15670098CA23 /* InfoPlist.strings */; };
 		C725BDFC160B158C0098CA23 /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDEF160B158C0098CA23 /* DiffMatchPatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C725BDFD160B158C0098CA23 /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = C725BDF0160B158C0098CA23 /* DiffMatchPatch.m */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7200BFC1620A0E900591570 /* DiffMatchPatch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiffMatchPatch-Prefix.pch"; sourceTree = "<group>"; };
 		C725BDE1160B15670098CA23 /* DiffMatchPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiffMatchPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C725BDE5160B15670098CA23 /* DiffMatchPatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiffMatchPatch-Info.plist"; sourceTree = "<group>"; };
 		C725BDE7160B15670098CA23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		C725BDE4160B15670098CA23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7200BFC1620A0E900591570 /* DiffMatchPatch-Prefix.pch */,
 				C725BDE5160B15670098CA23 /* DiffMatchPatch-Info.plist */,
 				C725BDE6160B15670098CA23 /* InfoPlist.strings */,
 			);
@@ -113,6 +116,7 @@
 				C725BE03160B158C0098CA23 /* NSString+JavaSubstring.h in Headers */,
 				C725BE05160B158C0098CA23 /* NSString+UnicharUtilities.h in Headers */,
 				C725BE07160B158C0098CA23 /* NSString+UriCompatibility.h in Headers */,
+				C7200BFD1620A0E900591570 /* DiffMatchPatch-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
