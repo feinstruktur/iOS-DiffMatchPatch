@@ -20,6 +20,8 @@
  * ObjC port: jan@geheimwerk.de (Jan Weiß)
  */
 
+#import <Foundation/Foundation.h>
+
 
 @interface NSString (UriCompatibility)
 
