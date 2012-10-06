@@ -1,4 +1,4 @@
-Obj-C Diff, Match and Patch Library as an iOS universal framework
+iOS DiffMatchPatch Universal Framework
 ===============================================
 A simple way to use the classic DiffMatchPatch library as a drop-in iOS universal (i.e. runs on device and in the simulator) framework.
 

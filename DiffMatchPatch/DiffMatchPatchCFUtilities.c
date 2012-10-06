@@ -508,6 +508,134 @@ CFStringRef diff_linesToCharsMungeCFStringCreate(CFStringRef text, CFMutableArra
 }
 
 /**
+<<<<<<< HEAD:DiffMatchPatch/DiffMatchPatchCFUtilities.c
+=======
+ * Split a text into a list of strings.   Reduce the texts to a CFStringRef of
+ * hashes where where each Unicode character represents one token (or boundary between tokens).
+ * @param text CFString to encode.
+ * @param lineArray CFMutableArray of unique strings.
+ * @param lineHash Map of strings to indices.
+ * @return Encoded CFStringRef.
+ */
+CFStringRef diff_tokensToCharsMungeCFStringCreate(CFStringRef text, CFMutableArrayRef tokenArray, CFMutableDictionaryRef tokenHash, CFOptionFlags tokenizerOptions) {
+  
+  CFStringRef token;
+  CFMutableStringRef chars = CFStringCreateMutable(kCFAllocatorDefault, 0);
+  
+  CFIndex textLength = CFStringGetLength(text);
+  
+  //CFLocaleRef currentLocale = CFLocaleCopyCurrent();
+  
+  CFRange tokenizerRange = CFRangeMake(0, textLength);
+  
+  CFStringTokenizerRef tokenizer = CFStringTokenizerCreate(kCFAllocatorDefault, text, tokenizerRange, tokenizerOptions, NULL);
+  
+  //CFRelease(currentLocale);
+  
+  // Set tokenizer to the start of the string. 
+  CFStringTokenizerTokenType tokenType = CFStringTokenizerGoToTokenAtIndex(tokenizer, 0);
+  
+  // Walk the text, pulling out a substring for each token (or boundary between tokens). 
+  // A token is either a word, sentence, paragraph or line depending on what tokenizerOptions is set to. 
+  CFRange tokenRange;
+  while (tokenType != kCFStringTokenizerTokenNone) {
+    tokenRange = CFStringTokenizerGetCurrentTokenRange(tokenizer);
+    
+    token = CFStringCreateWithSubstring(kCFAllocatorDefault, text, tokenRange);
+    diff_mungeHelper(token, tokenArray, tokenHash, chars);
+    CFRelease(token);
+    
+    tokenType = CFStringTokenizerAdvanceToNextToken(tokenizer);
+  }
+  
+  CFRelease(tokenizer);
+  
+  return chars;
+  
+}
+
+/**
+ * Split a text into a list of strings.   Reduce the texts to a CFStringRef of
+ * hashes where where each Unicode character represents one word (or boundary between words).
+ * @param text CFString to encode.
+ * @param lineArray CFMutableArray of unique strings.
+ * @param lineHash Map of strings to indices.
+ * @return Encoded CFStringRef.
+ */
+CFStringRef diff_wordsToCharsMungeCFStringCreate(CFStringRef text, CFMutableArrayRef tokenArray, CFMutableDictionaryRef tokenHash) {
+
+  return diff_tokensToCharsMungeCFStringCreate(text, tokenArray, tokenHash, kCFStringTokenizerUnitWordBoundary);
+  
+}
+
+/**
+ * Split a text into a list of strings.   Reduce the texts to a CFStringRef of
+ * hashes where where each Unicode character represents one sentence.
+ * @param text CFString to encode.
+ * @param lineArray CFMutableArray of unique strings.
+ * @param lineHash Map of strings to indices.
+ * @return Encoded CFStringRef.
+ */
+CFStringRef diff_sentencesToCharsMungeCFStringCreate(CFStringRef text, CFMutableArrayRef tokenArray, CFMutableDictionaryRef tokenHash) {
+
+  return diff_tokensToCharsMungeCFStringCreate(text, tokenArray, tokenHash, kCFStringTokenizerUnitSentence);
+
+}
+
+/**
+ * Split a text into a list of strings.   Reduce the texts to a CFStringRef of
+ * hashes where where each Unicode character represents one paragraph.
+ * @param text CFString to encode.
+ * @param lineArray CFMutableArray of unique strings.
+ * @param lineHash Map of strings to indices.
+ * @return Encoded CFStringRef.
+ */
+CFStringRef diff_paragraphsToCharsMungeCFStringCreate(CFStringRef text, CFMutableArrayRef tokenArray, CFMutableDictionaryRef tokenHash) {
+  
+  return diff_tokensToCharsMungeCFStringCreate(text, tokenArray, tokenHash, kCFStringTokenizerUnitParagraph);
+  
+}
+
+/**
+ * Split a text into a list of strings.   Reduce the texts to a CFStringRef of
+ * hashes where each Unicode character represents one text fragment delimitered by line breaks (including the trailing line break characters if any).
+ * In this context “line break” does not refere to “something you get when you press the return-key”. 
+ * Instead it the refers to “line break boundaries” as defined in “UAX #14: Unicode Line Breaking Algorithm” (http://www.unicode.org/reports/tr14/). 
+ * @param text CFString to encode.
+ * @param lineArray CFMutableArray of unique strings.
+ * @param lineHash Map of strings to indices.
+ * @return Encoded CFStringRef.
+ */
+CFStringRef diff_lineBreakDelimiteredToCharsMungeCFStringCreate(CFStringRef text, CFMutableArrayRef tokenArray, CFMutableDictionaryRef tokenHash) {
+  
+  return diff_tokensToCharsMungeCFStringCreate(text, tokenArray, tokenHash, kCFStringTokenizerUnitLineBreak);
+  
+}
+
+CFStringRef diff_charsToTokenCFStringCreate(CFStringRef charsString, CFArrayRef tokenArray) {
+#define hashAtIndex(A)  hash_chars[(A)]
+  CFMutableStringRef text = CFStringCreateMutable(kCFAllocatorDefault, 0);
+  
+  CFIndex hash_count = CFStringGetLength(charsString);
+
+  const UniChar *hash_chars;
+  UniChar *hash_buffer = NULL;
+  diff_CFStringPrepareUniCharBuffer(charsString, &hash_chars, &hash_buffer, CFRangeMake(0, hash_count));
+  
+  for (CFIndex i = 0; i < hash_count; i++) {
+    CFIndex tokenHash = (CFIndex)hashAtIndex(i);
+    CFStringRef token = CFArrayGetValueAtIndex(tokenArray, tokenHash);
+    CFStringAppend(text, token);
+  }
+  
+  if (hash_buffer != NULL)  free(hash_buffer);
+  
+  return text;
+#undef hashAtIndex
+}
+
+/**
+>>>>>>> 9b0d73b4f6776ffd1097e92994adda58aacd1ca4:DiffMatchPatchCFUtilities.c
  * Given two strings, compute a score representing whether the internal
  * boundary falls on logical boundaries.
  * Scores range from 6 (best) to 0 (worst).
