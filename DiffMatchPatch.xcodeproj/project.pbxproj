@@ -7,386 +7,180 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D03489B135F75770051FE16 /* mode-test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D03489A135F75770051FE16 /* mode-test.m */; };
-		3D0348CA135F7AEC0051FE16 /* DiffMatchPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* DiffMatchPatch.framework */; };
-		3D0348CB135F7AEC0051FE16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
-		3D08D25412A71B9C007A5316 /* NSString+UnicharUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D08D25212A71B9C007A5316 /* NSString+UnicharUtilities.m */; };
-		3D0D3FAB128CBD350093B0C7 /* DiffMatchPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* DiffMatchPatch.framework */; };
-		3D5BBFDF128C416900B8F5FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
-		3D5BC080128C44A700B8F5FF /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5BC07E128C44A700B8F5FF /* DiffMatchPatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D5BC081128C44A700B8F5FF /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BC07F128C44A700B8F5FF /* DiffMatchPatch.m */; };
-		3D70BCC9128EDAF80078D1A6 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D70BCC7128EDAF80078D1A6 /* NSString+UriCompatibility.m */; };
-		3D96F3BC12AFC6D800C3E5C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
-		3D96F44A12AFC82F00C3E5C0 /* speedtest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D96F44912AFC82F00C3E5C0 /* speedtest.m */; };
-		3D96F44F12AFC96A00C3E5C0 /* DiffMatchPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* DiffMatchPatch.framework */; };
-		3DA641D1128DE21D00B33CE9 /* DiffMatchPatchCFUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DA64170128DDA3400B33CE9 /* DiffMatchPatchCFUtilities.c */; };
-		3DA64278128DE8C900B33CE9 /* DiffMatchPatchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5BC0DE128CAAE400B8F5FF /* DiffMatchPatchTest.m */; };
-		3DC87026129FF4B6001F602B /* NSString+JavaSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC87024129FF4B6001F602B /* NSString+JavaSubstring.m */; };
-		3DEE4C73129D484D00885485 /* NSMutableDictionary+DMPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE4C71129D484D00885485 /* NSMutableDictionary+DMPExtensions.m */; };
-		3DFF2F3813C2105300DC564A /* TestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF2F3713C2105300DC564A /* TestUtilities.m */; };
-		3DFF2F3913C2105300DC564A /* TestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF2F3713C2105300DC564A /* TestUtilities.m */; };
-		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		C725BDE8160B15670098CA23 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C725BDE6160B15670098CA23 /* InfoPlist.strings */; };
+		C725BDFC160B158C0098CA23 /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDEF160B158C0098CA23 /* DiffMatchPatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C725BDFD160B158C0098CA23 /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = C725BDF0160B158C0098CA23 /* DiffMatchPatch.m */; };
+		C725BDFE160B158C0098CA23 /* DiffMatchPatchCFUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = C725BDF1160B158C0098CA23 /* DiffMatchPatchCFUtilities.c */; };
+		C725BDFF160B158C0098CA23 /* DiffMatchPatchCFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDF2160B158C0098CA23 /* DiffMatchPatchCFUtilities.h */; };
+		C725BE00160B158C0098CA23 /* MinMaxMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDF3160B158C0098CA23 /* MinMaxMacros.h */; };
+		C725BE01160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDF4160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.h */; };
+		C725BE02160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C725BDF5160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.m */; };
+		C725BE03160B158C0098CA23 /* NSString+JavaSubstring.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDF6160B158C0098CA23 /* NSString+JavaSubstring.h */; };
+		C725BE04160B158C0098CA23 /* NSString+JavaSubstring.m in Sources */ = {isa = PBXBuildFile; fileRef = C725BDF7160B158C0098CA23 /* NSString+JavaSubstring.m */; };
+		C725BE05160B158C0098CA23 /* NSString+UnicharUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDF8160B158C0098CA23 /* NSString+UnicharUtilities.h */; };
+		C725BE06160B158C0098CA23 /* NSString+UnicharUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C725BDF9160B158C0098CA23 /* NSString+UnicharUtilities.m */; };
+		C725BE07160B158C0098CA23 /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = C725BDFA160B158C0098CA23 /* NSString+UriCompatibility.h */; };
+		C725BE08160B158C0098CA23 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C725BDFB160B158C0098CA23 /* NSString+UriCompatibility.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3D0348CC135F7B020051FE16 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = DiffMatchPatch;
-		};
-		3D96F3B812AFC6CD00C3E5C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = DiffMatchPatch;
-		};
-		3DA64279128DE8CD00B33CE9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = DiffMatchPatch;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		32DBCF5E0370ADEE00C91783 /* DiffMatchPatch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch_Prefix.pch; sourceTree = "<group>"; };
-		3D03488E135F75460051FE16 /* mode-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mode-test"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D03489A135F75770051FE16 /* mode-test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "mode-test.m"; sourceTree = "<group>"; };
-		3D08D25112A71B9C007A5316 /* NSString+UnicharUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UnicharUtilities.h"; sourceTree = "<group>"; };
-		3D08D25212A71B9C007A5316 /* NSString+UnicharUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UnicharUtilities.m"; sourceTree = "<group>"; };
-		3D510E1012BEBA44008C7CE7 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		3D510E1112BEBA44008C7CE7 /* Version.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
-		3D5BC07E128C44A700B8F5FF /* DiffMatchPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch.h; sourceTree = "<group>"; };
-		3D5BC07F128C44A700B8F5FF /* DiffMatchPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffMatchPatch.m; sourceTree = "<group>"; };
-		3D5BC0AF128CA8E200B8F5FF /* DiffMatchPatchTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiffMatchPatchTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5BC0B0128CA8E200B8F5FF /* DiffMatchPatchTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiffMatchPatchTest-Info.plist"; sourceTree = "<group>"; };
-		3D5BC0DD128CAAE400B8F5FF /* DiffMatchPatchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatchTest.h; sourceTree = "<group>"; };
-		3D5BC0DE128CAAE400B8F5FF /* DiffMatchPatchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffMatchPatchTest.m; sourceTree = "<group>"; };
-		3D5BC104128CAD6900B8F5FF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3D70BCC6128EDAF80078D1A6 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UriCompatibility.h"; sourceTree = "<group>"; };
-		3D70BCC7128EDAF80078D1A6 /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UriCompatibility.m"; sourceTree = "<group>"; };
-		3D96F3A212AFC68900C3E5C0 /* speedtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = speedtest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D96F43E12AFC76600C3E5C0 /* speedtest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = speedtest_Prefix.pch; path = ../speedtest_Prefix.pch; sourceTree = "<group>"; };
-		3D96F44912AFC82F00C3E5C0 /* speedtest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = speedtest.m; sourceTree = "<group>"; };
-		3DA6416F128DDA3400B33CE9 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
-		3DA64170128DDA3400B33CE9 /* DiffMatchPatchCFUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DiffMatchPatchCFUtilities.c; sourceTree = "<group>"; };
-		3DA642BC128DEF4900B33CE9 /* MinMaxMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMaxMacros.h; sourceTree = "<group>"; };
-		3DC87023129FF4B6001F602B /* NSString+JavaSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaSubstring.h"; sourceTree = "<group>"; };
-		3DC87024129FF4B6001F602B /* NSString+JavaSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JavaSubstring.m"; sourceTree = "<group>"; };
-		3DEE4C70129D484D00885485 /* NSMutableDictionary+DMPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DMPExtensions.h"; sourceTree = "<group>"; };
-		3DEE4C71129D484D00885485 /* NSMutableDictionary+DMPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DMPExtensions.m"; sourceTree = "<group>"; };
-		3DFF2F3613C2105300DC564A /* TestUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUtilities.h; sourceTree = "<group>"; };
-		3DFF2F3713C2105300DC564A /* TestUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtilities.m; sourceTree = "<group>"; };
-		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DC2EF5B0486A6940098B216 /* DiffMatchPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiffMatchPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C725BDE1160B15670098CA23 /* DiffMatchPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiffMatchPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C725BDE5160B15670098CA23 /* DiffMatchPatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiffMatchPatch-Info.plist"; sourceTree = "<group>"; };
+		C725BDE7160B15670098CA23 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C725BDE9160B15670098CA23 /* DiffMatchPatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiffMatchPatch-Prefix.pch"; sourceTree = "<group>"; };
+		C725BDEF160B158C0098CA23 /* DiffMatchPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatch.h; sourceTree = "<group>"; };
+		C725BDF0160B158C0098CA23 /* DiffMatchPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiffMatchPatch.m; sourceTree = "<group>"; };
+		C725BDF1160B158C0098CA23 /* DiffMatchPatchCFUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DiffMatchPatchCFUtilities.c; sourceTree = "<group>"; };
+		C725BDF2160B158C0098CA23 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
+		C725BDF3160B158C0098CA23 /* MinMaxMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMaxMacros.h; sourceTree = "<group>"; };
+		C725BDF4160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+DMPExtensions.h"; sourceTree = "<group>"; };
+		C725BDF5160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+DMPExtensions.m"; sourceTree = "<group>"; };
+		C725BDF6160B158C0098CA23 /* NSString+JavaSubstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JavaSubstring.h"; sourceTree = "<group>"; };
+		C725BDF7160B158C0098CA23 /* NSString+JavaSubstring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JavaSubstring.m"; sourceTree = "<group>"; };
+		C725BDF8160B158C0098CA23 /* NSString+UnicharUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UnicharUtilities.h"; sourceTree = "<group>"; };
+		C725BDF9160B158C0098CA23 /* NSString+UnicharUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UnicharUtilities.m"; sourceTree = "<group>"; };
+		C725BDFA160B158C0098CA23 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UriCompatibility.h"; sourceTree = "<group>"; };
+		C725BDFB160B158C0098CA23 /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UriCompatibility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3D03488C135F75460051FE16 /* Frameworks */ = {
+		C725BDDB160B15670098CA23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0348CA135F7AEC0051FE16 /* DiffMatchPatch.framework in Frameworks */,
-				3D0348CB135F7AEC0051FE16 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D5BC0AC128CA8E200B8F5FF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D0D3FAB128CBD350093B0C7 /* DiffMatchPatch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D96F3A012AFC68900C3E5C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D96F44F12AFC96A00C3E5C0 /* DiffMatchPatch.framework in Frameworks */,
-				3D96F3BC12AFC6D800C3E5C0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DC2EF560486A6940098B216 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D5BBFDF128C416900B8F5FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		034768DFFF38A50411DB9C8B /* Products */ = {
+		C725BDD2160B15670098CA23 = {
 			isa = PBXGroup;
 			children = (
-				8DC2EF5B0486A6940098B216 /* DiffMatchPatch.framework */,
-				3D5BC0AF128CA8E200B8F5FF /* DiffMatchPatchTest.octest */,
-				3D96F3A212AFC68900C3E5C0 /* speedtest */,
-				3D03488E135F75460051FE16 /* mode-test */,
+				C725BDE3160B15670098CA23 /* DiffMatchPatch */,
+				C725BDE2160B15670098CA23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C725BDE2160B15670098CA23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C725BDE1160B15670098CA23 /* DiffMatchPatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0867D691FE84028FC02AAC07 /* DiffMatchPatch */ = {
+		C725BDE3160B15670098CA23 /* DiffMatchPatch */ = {
 			isa = PBXGroup;
 			children = (
-				08FB77AEFE84172EC02AAC07 /* Classes */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
-				089C1665FE841158C02AAC07 /* Resources */,
-				3D510E0F12BEBA44008C7CE7 /* Configurations */,
-				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
-				3D5BC0D9128CAA7600B8F5FF /* Tests */,
-				034768DFFF38A50411DB9C8B /* Products */,
+				C725BDEF160B158C0098CA23 /* DiffMatchPatch.h */,
+				C725BDF0160B158C0098CA23 /* DiffMatchPatch.m */,
+				C725BDF1160B158C0098CA23 /* DiffMatchPatchCFUtilities.c */,
+				C725BDF2160B158C0098CA23 /* DiffMatchPatchCFUtilities.h */,
+				C725BDF3160B158C0098CA23 /* MinMaxMacros.h */,
+				C725BDF4160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.h */,
+				C725BDF5160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.m */,
+				C725BDF6160B158C0098CA23 /* NSString+JavaSubstring.h */,
+				C725BDF7160B158C0098CA23 /* NSString+JavaSubstring.m */,
+				C725BDF8160B158C0098CA23 /* NSString+UnicharUtilities.h */,
+				C725BDF9160B158C0098CA23 /* NSString+UnicharUtilities.m */,
+				C725BDFA160B158C0098CA23 /* NSString+UriCompatibility.h */,
+				C725BDFB160B158C0098CA23 /* NSString+UriCompatibility.m */,
+				C725BDE4160B15670098CA23 /* Supporting Files */,
 			);
-			name = DiffMatchPatch;
+			path = DiffMatchPatch;
 			sourceTree = "<group>";
 		};
-		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+		C725BDE4160B15670098CA23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
-				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+				C725BDE5160B15670098CA23 /* DiffMatchPatch-Info.plist */,
+				C725BDE6160B15670098CA23 /* InfoPlist.strings */,
+				C725BDE9160B15670098CA23 /* DiffMatchPatch-Prefix.pch */,
 			);
-			name = "External Frameworks and Libraries";
+			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		089C1665FE841158C02AAC07 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8DC2EF5A0486A6940098B216 /* Info.plist */,
-				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		08FB77AEFE84172EC02AAC07 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3D5BC07E128C44A700B8F5FF /* DiffMatchPatch.h */,
-				3D5BC07F128C44A700B8F5FF /* DiffMatchPatch.m */,
-				3DC87023129FF4B6001F602B /* NSString+JavaSubstring.h */,
-				3DC87024129FF4B6001F602B /* NSString+JavaSubstring.m */,
-				3D08D25112A71B9C007A5316 /* NSString+UnicharUtilities.h */,
-				3D08D25212A71B9C007A5316 /* NSString+UnicharUtilities.m */,
-				3D70BCC6128EDAF80078D1A6 /* NSString+UriCompatibility.h */,
-				3D70BCC7128EDAF80078D1A6 /* NSString+UriCompatibility.m */,
-				3DEE4C70129D484D00885485 /* NSMutableDictionary+DMPExtensions.h */,
-				3DEE4C71129D484D00885485 /* NSMutableDictionary+DMPExtensions.m */,
-			);
-			indentWidth = 2;
-			name = Classes;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		32C88DFF0371C24200C91783 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32DBCF5E0370ADEE00C91783 /* DiffMatchPatch_Prefix.pch */,
-				3DA642BC128DEF4900B33CE9 /* MinMaxMacros.h */,
-				3DA6416F128DDA3400B33CE9 /* DiffMatchPatchCFUtilities.h */,
-				3DA64170128DDA3400B33CE9 /* DiffMatchPatchCFUtilities.c */,
-			);
-			indentWidth = 2;
-			name = "Other Sources";
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		3D510E0F12BEBA44008C7CE7 /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				3D510E1112BEBA44008C7CE7 /* Version.xcconfig */,
-				3D510E1012BEBA44008C7CE7 /* Base.xcconfig */,
-			);
-			indentWidth = 2;
-			path = Configurations;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
-		};
-		3D5BC0D9128CAA7600B8F5FF /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3D5BC104128CAD6900B8F5FF /* SenTestingKit.framework */,
-				3D5BC0B0128CA8E200B8F5FF /* DiffMatchPatchTest-Info.plist */,
-				3D5BC0DD128CAAE400B8F5FF /* DiffMatchPatchTest.h */,
-				3D5BC0DE128CAAE400B8F5FF /* DiffMatchPatchTest.m */,
-				3DFF2F3613C2105300DC564A /* TestUtilities.h */,
-				3DFF2F3713C2105300DC564A /* TestUtilities.m */,
-				3D96F43E12AFC76600C3E5C0 /* speedtest_Prefix.pch */,
-				3D96F44912AFC82F00C3E5C0 /* speedtest.m */,
-				3D03489A135F75770051FE16 /* mode-test.m */,
-			);
-			indentWidth = 2;
-			path = Tests;
-			sourceTree = "<group>";
-			tabWidth = 2;
-			usesTabs = 0;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8DC2EF500486A6940098B216 /* Headers */ = {
+		C725BDDC160B15670098CA23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D5BC080128C44A700B8F5FF /* DiffMatchPatch.h in Headers */,
+				C725BDFC160B158C0098CA23 /* DiffMatchPatch.h in Headers */,
+				C725BDFF160B158C0098CA23 /* DiffMatchPatchCFUtilities.h in Headers */,
+				C725BE00160B158C0098CA23 /* MinMaxMacros.h in Headers */,
+				C725BE01160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.h in Headers */,
+				C725BE03160B158C0098CA23 /* NSString+JavaSubstring.h in Headers */,
+				C725BE05160B158C0098CA23 /* NSString+UnicharUtilities.h in Headers */,
+				C725BE07160B158C0098CA23 /* NSString+UriCompatibility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3D03488D135F75460051FE16 /* mode-test */ = {
+		C725BDE0160B15670098CA23 /* DiffMatchPatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D034899135F75640051FE16 /* Build configuration list for PBXNativeTarget "mode-test" */;
+			buildConfigurationList = C725BDEC160B15670098CA23 /* Build configuration list for PBXNativeTarget "DiffMatchPatch" */;
 			buildPhases = (
-				3D03488B135F75460051FE16 /* Sources */,
-				3D03488C135F75460051FE16 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D0348CD135F7B020051FE16 /* PBXTargetDependency */,
-			);
-			name = "mode-test";
-			productName = "mode-test";
-			productReference = 3D03488E135F75460051FE16 /* mode-test */;
-			productType = "com.apple.product-type.tool";
-		};
-		3D5BC0AE128CA8E200B8F5FF /* DiffMatchPatchTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D5BC0B3128CA8E500B8F5FF /* Build configuration list for PBXNativeTarget "DiffMatchPatchTest" */;
-			buildPhases = (
-				3D5BC0AA128CA8E200B8F5FF /* Resources */,
-				3D5BC0AB128CA8E200B8F5FF /* Sources */,
-				3D5BC0AC128CA8E200B8F5FF /* Frameworks */,
-				3D5BC0AD128CA8E200B8F5FF /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3DA6427A128DE8CD00B33CE9 /* PBXTargetDependency */,
-			);
-			name = DiffMatchPatchTest;
-			productName = DiffMatchPatchTest;
-			productReference = 3D5BC0AF128CA8E200B8F5FF /* DiffMatchPatchTest.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		3D96F3A112AFC68900C3E5C0 /* speedtest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D96F3B512AFC68E00C3E5C0 /* Build configuration list for PBXNativeTarget "speedtest" */;
-			buildPhases = (
-				3D96F39F12AFC68900C3E5C0 /* Sources */,
-				3D96F3A012AFC68900C3E5C0 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3D96F3B912AFC6CD00C3E5C0 /* PBXTargetDependency */,
-			);
-			name = speedtest;
-			productName = speedtest;
-			productReference = 3D96F3A212AFC68900C3E5C0 /* speedtest */;
-			productType = "com.apple.product-type.tool";
-		};
-		8DC2EF4F0486A6940098B216 /* DiffMatchPatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DiffMatchPatch" */;
-			buildPhases = (
-				8DC2EF500486A6940098B216 /* Headers */,
-				8DC2EF520486A6940098B216 /* Resources */,
-				8DC2EF540486A6940098B216 /* Sources */,
-				8DC2EF560486A6940098B216 /* Frameworks */,
+				C725BDD9160B15670098CA23 /* ShellScript */,
+				C725BDDA160B15670098CA23 /* Sources */,
+				C725BDDB160B15670098CA23 /* Frameworks */,
+				C725BDDC160B15670098CA23 /* Headers */,
+				C725BDDD160B15670098CA23 /* Resources */,
+				C725BDDE160B15670098CA23 /* ShellScript */,
+				C725BDDF160B15670098CA23 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DiffMatchPatch;
-			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = DiffMatchPatch;
-			productReference = 8DC2EF5B0486A6940098B216 /* DiffMatchPatch.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = C725BDE1160B15670098CA23 /* DiffMatchPatch.framework */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0867D690FE84028FC02AAC07 /* Project object */ = {
+		C725BDD4160B15670098CA23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = RS;
 			};
-			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "DiffMatchPatch" */;
+			buildConfigurationList = C725BDD7160B15670098CA23 /* Build configuration list for PBXProject "DiffMatchPatch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
 			);
-			mainGroup = 0867D691FE84028FC02AAC07 /* DiffMatchPatch */;
-			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			mainGroup = C725BDD2160B15670098CA23;
+			productRefGroup = C725BDE2160B15670098CA23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DC2EF4F0486A6940098B216 /* DiffMatchPatch */,
-				3D5BC0AE128CA8E200B8F5FF /* DiffMatchPatchTest */,
-				3D96F3A112AFC68900C3E5C0 /* speedtest */,
-				3D03488D135F75460051FE16 /* mode-test */,
+				C725BDE0160B15670098CA23 /* DiffMatchPatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3D5BC0AA128CA8E200B8F5FF /* Resources */ = {
+		C725BDDD160B15670098CA23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DC2EF520486A6940098B216 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				C725BDE8160B15670098CA23 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D5BC0AD128CA8E200B8F5FF /* ShellScript */ = {
+		C725BDD9160B15670098CA23 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,75 +191,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		C725BDDE160B15670098CA23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+		};
+		C725BDDF160B15670098CA23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3D03488B135F75460051FE16 /* Sources */ = {
+		C725BDDA160B15670098CA23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D03489B135F75770051FE16 /* mode-test.m in Sources */,
-				3DFF2F3913C2105300DC564A /* TestUtilities.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D5BC0AB128CA8E200B8F5FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3DA64278128DE8C900B33CE9 /* DiffMatchPatchTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3D96F39F12AFC68900C3E5C0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D96F44A12AFC82F00C3E5C0 /* speedtest.m in Sources */,
-				3DFF2F3813C2105300DC564A /* TestUtilities.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8DC2EF540486A6940098B216 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D5BC081128C44A700B8F5FF /* DiffMatchPatch.m in Sources */,
-				3DA641D1128DE21D00B33CE9 /* DiffMatchPatchCFUtilities.c in Sources */,
-				3D70BCC9128EDAF80078D1A6 /* NSString+UriCompatibility.m in Sources */,
-				3DEE4C73129D484D00885485 /* NSMutableDictionary+DMPExtensions.m in Sources */,
-				3DC87026129FF4B6001F602B /* NSString+JavaSubstring.m in Sources */,
-				3D08D25412A71B9C007A5316 /* NSString+UnicharUtilities.m in Sources */,
+				C725BDFD160B158C0098CA23 /* DiffMatchPatch.m in Sources */,
+				C725BDFE160B158C0098CA23 /* DiffMatchPatchCFUtilities.c in Sources */,
+				C725BE02160B158C0098CA23 /* NSMutableDictionary+DMPExtensions.m in Sources */,
+				C725BE04160B158C0098CA23 /* NSString+JavaSubstring.m in Sources */,
+				C725BE06160B158C0098CA23 /* NSString+UnicharUtilities.m in Sources */,
+				C725BE08160B158C0098CA23 /* NSString+UriCompatibility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3D0348CD135F7B020051FE16 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* DiffMatchPatch */;
-			targetProxy = 3D0348CC135F7B020051FE16 /* PBXContainerItemProxy */;
-		};
-		3D96F3B912AFC6CD00C3E5C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* DiffMatchPatch */;
-			targetProxy = 3D96F3B812AFC6CD00C3E5C0 /* PBXContainerItemProxy */;
-		};
-		3DA6427A128DE8CD00B33CE9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8DC2EF4F0486A6940098B216 /* DiffMatchPatch */;
-			targetProxy = 3DA64279128DE8CD00B33CE9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+		C725BDE6160B15670098CA23 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C1667FE841158C02AAC07 /* English */,
+				C725BDE7160B15670098CA23 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -473,252 +249,118 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB91AE08733DA50010E9CD /* Debug */ = {
+		C725BDEA160B15670098CA23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C725BDEB160B15670098CA23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C725BDED160B15670098CA23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DiffMatchPatch_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = DiffMatchPatch;
+				GCC_PREFIX_HEADER = "DiffMatchPatch/DiffMatchPatch-Prefix.pch";
+				INFOPLIST_FILE = "DiffMatchPatch/DiffMatchPatch-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		1DEB91AF08733DA50010E9CD /* Release */ = {
+		C725BDEE160B15670098CA23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DiffMatchPatch_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = DiffMatchPatch;
+				GCC_PREFIX_HEADER = "DiffMatchPatch/DiffMatchPatch-Prefix.pch";
+				INFOPLIST_FILE = "DiffMatchPatch/DiffMatchPatch-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
 				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
-		1DEB91B208733DA50010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D510E1012BEBA44008C7CE7 /* Base.xcconfig */;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_UNINITIALIZED_AUTOS = NO;
-				ONLY_ACTIVE_ARCH = YES;
-			};
-			name = Debug;
-		};
-		1DEB91B308733DA50010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D510E1012BEBA44008C7CE7 /* Base.xcconfig */;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = supported;
-			};
-			name = Release;
-		};
-		3D034890135F75460051FE16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INSTALL_PATH = /usr/local/bin;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = "mode-test";
-			};
-			name = Debug;
-		};
-		3D034892135F75460051FE16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INSTALL_PATH = /usr/local/bin;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = "mode-test";
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		3D5BC0B1128CA8E500B8F5FF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Tests/DiffMatchPatchTest-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = DiffMatchPatchTest;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		3D5BC0B2128CA8E500B8F5FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Tests/DiffMatchPatchTest-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PRODUCT_NAME = DiffMatchPatchTest;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		3D96F3A412AFC68B00C3E5C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = speedtest_Prefix.pch;
-				INSTALL_PATH = /usr/local/bin;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = speedtest;
-			};
-			name = Debug;
-		};
-		3D96F3A512AFC68B00C3E5C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = speedtest_Prefix.pch;
-				INSTALL_PATH = /usr/local/bin;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PRODUCT_NAME = speedtest;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DiffMatchPatch" */ = {
+		C725BDD7160B15670098CA23 /* Build configuration list for PBXProject "DiffMatchPatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91AE08733DA50010E9CD /* Debug */,
-				1DEB91AF08733DA50010E9CD /* Release */,
+				C725BDEA160B15670098CA23 /* Debug */,
+				C725BDEB160B15670098CA23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "DiffMatchPatch" */ = {
+		C725BDEC160B15670098CA23 /* Build configuration list for PBXNativeTarget "DiffMatchPatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB91B208733DA50010E9CD /* Debug */,
-				1DEB91B308733DA50010E9CD /* Release */,
+				C725BDED160B15670098CA23 /* Debug */,
+				C725BDEE160B15670098CA23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		3D034899135F75640051FE16 /* Build configuration list for PBXNativeTarget "mode-test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D034890135F75460051FE16 /* Debug */,
-				3D034892135F75460051FE16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		3D5BC0B3128CA8E500B8F5FF /* Build configuration list for PBXNativeTarget "DiffMatchPatchTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D5BC0B1128CA8E500B8F5FF /* Debug */,
-				3D5BC0B2128CA8E500B8F5FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		3D96F3B512AFC68E00C3E5C0 /* Build configuration list for PBXNativeTarget "speedtest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D96F3A412AFC68B00C3E5C0 /* Debug */,
-				3D96F3A512AFC68B00C3E5C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+	rootObject = C725BDD4160B15670098CA23 /* Project object */;
 }
